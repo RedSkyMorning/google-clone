@@ -1,0 +1,75 @@
+
+/* Everything I added starts here */
+.toolbar {
+	text-align: right;
+	width: 230px;
+	float:right;
+}
+
+.toolbar a {
+	display:inline-block;
+	font-family: Verdana, Times;
+	text-decoration: none;
+}
+
+.toolbar div {
+	border:1px blue;
+	border-radius: 40;
+	color: White;
+	background-color: blue;
+	height: 25px;
+	width: 60px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.logobox {
+	text-align: center;
+	position: fixed;
+}
+
+.searchbar #search {
+	border: 2px solid;
+	border-color: gray;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+.footer div {
+	display:inline-block;
+}
+
+.bottom div {
+	background-color: #C0C0C0;
+	border: 1px solid #C0C0C0;
+}
+
+.searchbar input {
+	width: 500px;
+}
+
+.buttonbar {
+	text-align: center;
+}
+
+.leftbuttons {
+	float:left;
+}
+
+.leftbuttons a {
+	text-decoration: none;
+	display:inline-block;
+}
+
+.rightbuttons {
+		float: right;
+}
+
+.rightbuttons a {
+	text-decoration: none;
+	display: inline-block;
+
+}
