@@ -1,71 +1,192 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 
 /* Everything I added starts here */
+html, body {
+	height: 100%;
+}
+
+body, a:hover {
+	text-decoration: underline;
+}
+
+.container {
+	min-height: 100%;
+	position:relative;
+	height: auto !important;
+	height:100%;
+	margin: 0 auto -25px;
+}
+
+.header {
+	height: 70px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
 .toolbar {
+	display:inline;
 	text-align: right;
-	width: 230px;
+	width:300px;
 	float:right;
 }
 
 .toolbar a {
 	display:inline-block;
-	font-family: Verdana, Times;
+	font-family: Arial, Times;
 	text-decoration: none;
+	vertical-align: middle;
+	font-size: small;
+}
+.toolbar a:hover {
+	text-decoration: underline;
 }
 
-.toolbar div {
-	border:1px blue;
-	border-radius: 40;
-	color: White;
+#psignin {
+	border:1px solid blue;
+	border-radius: 5px;
 	background-color: blue;
-	height: 25px;
+	height: 20px;
 	width: 60px;
 	margin-top: auto;
 	margin-bottom: auto;
+	color:#FFFFFF;
+	text-align: center;
+	padding-top: 5px;
+	font-style: bold;
 }
 
 .logobox {
-	text-align: center;
-	position: fixed;
+	width: 100%;
+	position: relative;
 }
 
-.searchbar #search {
-	border: 2px solid;
+#logo {
+	display: table;
+	margin: auto;
+	height: 95px;
+	width: 265px;
+	padding-top: 90px;
+}
+
+#search {
+	background: url("images/microphone.png")	
+	no-repeat right center;
+	padding: 10px 1px 10px 1px;
+}
+
+.searchbar form {
+	border: none;
 	border-color: gray;
 	text-align: center;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 0%;
 	padding-right: 0%;
+	width: 680px;
+	margin: 10px auto 15px auto;
 }
 
-.footer div {
-	display:inline-block;
+#microphone {
+	display:inline;
+}
+.footer .push {
+	height: 4em;
 }
 
-.bottom div {
-	background-color: #C0C0C0;
-	border: 1px solid #C0C0C0;
+.push {
+	background-color: #FFFFFF;
+}
+
+.searcharea {
+	position: relative;
+	width: 100%;
+	margin: 10px 0 5px 0;
 }
 
 .searchbar input {
-	width: 500px;
+	width: 600px;
 }
 
 .buttonbar {
 	text-align: center;
 }
 
+.footer {
+	width: 100%;
+	height: 25px;
+	background-color: #f2f2f2;
+	font-family: Arial;
+	font-size: small;
+	border-top: 1px solid #e4e4e4;
+	line-height: 25px;
+}
+
+.footer div {
+	display:inline-block;
+}
+
 .leftbuttons {
 	float:left;
+	padding-left: 15px;
 }
 
 .leftbuttons a {
 	text-decoration: none;
 	display:inline-block;
+	margin-left: 10px;
+	text-align: center;
 }
 
 .rightbuttons {
 		float: right;
+		padding-right:20px;
 }
 
 .rightbuttons a {
